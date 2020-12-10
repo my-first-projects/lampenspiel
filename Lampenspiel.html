@@ -1,0 +1,200 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <title>Lampnspiel</title>
+    <script language="javascript" type="text/javascript">
+      var lampeAnSrc, lampeAusSrc;
+      function init(){
+        lampeAusSrc = document.images[0].src;
+        lampeAnSrc = document.images[1].src; 
+      }
+      
+      function klick(nummer){
+        if (document.images[nummer].src==lampeAnSrc){
+          document.images[nummer].src="lampe_aus.jpg";
+        }
+        else{
+          document.images[nummer].src="lampe_an.jpg";
+        }
+        }
+    function level0(){
+          for(var s=2;s<=26;s=s+1) {
+         document.images[s].src ="lampe_an.jpg";
+         }
+         document.images[18].src ="lampe_aus.jpg";
+         document.images[19].src ="lampe_aus.jpg";
+         document.images[20].src ="lampe_aus.jpg";
+         document.images[14].src ="lampe_aus.jpg";
+         document.images[24].src ="lampe_aus.jpg";  
+     }
+     function level1(){  
+          for(var s=2;s<=26;s=s+1) {
+         document.images[s].src ="lampe_an.jpg";
+         }
+         document.images[2].src ="lampe_aus.jpg";
+         document.images[6].src ="lampe_aus.jpg" ;
+         document.images[22].src ="lampe_aus.jpg" ;
+         document.images[26].src ="lampe_aus.jpg"  ;
+     }
+      function level2(){
+           for(var s=2;s<=26;s=s+1) {
+         document.images[s].src ="lampe_an.jpg";
+         }
+         document.images[4].src ="lampe_aus.jpg" ;
+         document.images[11].src ="lampe_aus.jpg";
+         document.images[15].src ="lampe_aus.jpg";
+         document.images[19].src ="lampe_aus.jpg";
+         document.images[25].src ="lampe_aus.jpg";
+         document.images[26].src ="lampe_aus.jpg";
+     }
+      function level3(){
+           for(var s=2;s<=26;s=s+1) {
+         document.images[s].src ="lampe_an.jpg";
+         }
+         document.images[2].src ="lampe_aus.jpg";
+         document.images[3].src ="lampe_aus.jpg";
+         document.images[24].src ="lampe_aus.jpg";
+         document.images[25].src ="lampe_aus.jpg";
+     }
+      function level4(){
+       for(var i=2;i<=26;i=i+1) {
+         document.images[i].src ="lampe_aus.jpg";  
+       }
+      }       
+      function zufall(){
+      for(var s=2;s<=26;s=s+1) {
+         document.images[s].src ="lampe_an.jpg";
+         }
+      for(var z=0;z<=10;z=z+1){
+          document.images[Math.floor((Math.random()*25)+2)].src="lampe_aus.jpg";
+        }
+      }  
+    </script>
+</head>
+<body onload="init()">
+    <p align="center"><img src="lampe_aus.jpg">Wenn alle Lampen ausgeschaltet sind, haben Sie gewonnen<img src="lampe_an.jpg"></p>
+    <center> <table border="1">
+          <tr> 
+            <td>
+                <img src="lampe_an.jpg" onclick="klick(2)+klick(3)+klick(7)">
+            </td>
+            <td>
+                <img src="lampe_an.jpg" onclick="klick(3)+klick(2)+klick(4)+klick(8)">
+            </td>
+            <td>
+               <img src="lampe_an.jpg" onclick="klick(4)+klick(3)+klick(5)+klick(9)">
+            </td>
+            <td>
+               <img src="lampe_an.jpg" onclick="klick(5)+klick(4)+klick(6)+klick(10)">
+            </td>
+            <td>
+              <img src="lampe_an.jpg" onclick="klick(6)+klick(5)+klick(11)">
+           </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="lampe_an.jpg" onclick="klick(7)+klick(2)+klick(8)+klick(12)">
+            </td>
+            <td>
+                <img src="lampe_an.jpg" onclick="klick(8)+klick(7)+klick(9)+klick(3)+klick(13)">
+            </td>
+            <td>
+               <img src="lampe_an.jpg" onclick="klick(9)+klick(8)+klick(10)+klick(4)+klick(14)">
+            </td>
+            <td>
+               <img src="lampe_an.jpg" onclick="klick(10)+klick(9)+klick(11)+klick(5)+klick(15)">
+            </td>
+            <td>
+              <img src="lampe_an.jpg" onclick="klick(11)+klick(10)+klick(16)+klick(6)">
+           </td>
+        </tr>
+         <tr>
+            <td>
+                <img src="lampe_an.jpg" onclick="klick(12)+klick(7)+klick(17)+klick(13)">
+            </td>
+            <td>
+                <img src="lampe_an.jpg" onclick="klick(13)+klick(12)+klick(14)+klick(8)+klick(18)">
+            </td>
+            <td>
+               <img src="lampe_an.jpg" onclick="klick(14)+klick(13)+klick(15)+klick(9)+klick(19)">
+            </td>
+            <td>
+               <img src="lampe_an.jpg" onclick="klick(15)+klick(14)+klick(16)+klick(10)+klick(20)">
+            </td>
+            <td>
+              <img src="lampe_an.jpg" onclick="klick(16)+klick(15)+klick(11)+klick(21)">
+           </td>
+        </tr>
+         <tr>
+            <td>
+                <img src="lampe_an.jpg" onclick="klick(17)+klick(18)+klick(12)+klick(22)">
+            </td>
+            <td>
+                <img src="lampe_an.jpg" onclick="klick(18)+klick(17)+klick(19)+klick(13)+klick(23)">
+            </td>
+            <td>
+               <img src="lampe_an.jpg" onclick="klick(19)+klick(18)+klick(20)+klick(14)+klick(24)">
+            </td>
+            <td>
+               <img src="lampe_an.jpg" onclick="klick(20)+klick(19)+klick(21)+klick(15)+klick(25)">
+            </td>
+            <td>
+              <img src="lampe_an.jpg" onclick="klick(21)+klick(20)+klick(16)+klick(26)">
+           </td>
+        </tr>
+         <tr>
+            <td>
+                <img src="lampe_an.jpg" onclick="klick(22)+klick(23)+klick(17)">
+            </td>
+            <td>
+                <img src="lampe_an.jpg" onclick="klick(23)+klick(22)+klick(24)+klick(18)">
+            </td>
+            <td>
+               <img src="lampe_an.jpg" onclick="klick(24)+klick(23)+klick(25)+klick(19)">
+            </td>
+            <td>
+               <img src="lampe_an.jpg" onclick="klick(25)+klick(24)+klick(26)+klick(20)">
+            </td>
+            <td>
+              <img src="lampe_an.jpg" onclick="klick(26)+klick(25)+klick(21)">
+           </td>
+        </tr>
+    </table>  </center> 
+    <center>
+    <table>
+      <tr>
+       <td>
+         <button onclick="level0()">Level 0</button>
+         </td>
+     </tr>
+    <tr>
+       <td>
+         <button onclick="level1()">Level 1</button>
+        </td>
+     </tr>
+     <tr>
+      <td>
+       <button onclick="level2()">Level 2</button>
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <button onclick="level3()">Level 3</button> 
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <button onclick="level4()">Level 4</button>
+      </td>
+     </tr>
+     <tr>
+       <td>
+        <button onclick="zufall()">Zufall</button>
+       </td>
+      </tr>
+     </table>
+    </center>
+</body>
+</html>
+ 
