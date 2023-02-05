@@ -5,7 +5,7 @@
 You have to switch every lamp off. By clicking a lamp, the directly attached lamps and the clicked one will invert their state.
 
 ## Start your own adventure
-Open the Affenpuzzle.html in the browser of your choice.
+Open the Lampenspiel.html in the browser of your choice.
 
 ## Screenshot
 ![Screenshot](screenshot.png)
